@@ -1,0 +1,41 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Business"
+        ],
+        "stores": [
+            "BusinessStore"
+        ],
+        "views": [
+            "MainTabView"
+        ],
+        "controllers": [
+            "Business"
+        ],
+        "name": "WitWu"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "//Ext.Msg.alert('Application Launch','Success!');"
+                ]
+            },
+            "designerId": "ce3de646-e417-4ecf-a932-49f967b99649"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    { id: 200, ownerName: 'Len', latitude:100, longitude:100, taskName: 'Run 5 miles' },   \r",
+            "    { id: 201, ownerName: 'Len', latitude:100, longitude:100, taskName: 'Present marketing plan' },\r",
+            "    { id: 202, ownerName: 'Force', latitude:100, longitude:100, taskName: 'Research potential advertisement platforms' },\r",
+            "    { id: 203, ownerName: 'Force', latitude:100, longitude:100, taskName: 'Get Groceries' },\r",
+            "    { id: 204, ownerName: 'Jedi', latitude:100, longitude:100, taskName: 'Demo App' },\r",
+            "    { id: 205, ownerName: 'Jedi', latitude:100, longitude:100, taskName: 'Growth Plan' },\r",
+            "\t{ id: 206, ownerName: 'Jedi', latitude:100, longitude:100, taskName: 'Meetign with Chris + Len' }   \r",
+            "]"
+        ],
+        "groupField": "ownerName",
+        "model": "Business",
+        "storeId": "BusinessStore",
+        "designer|userClassName": "BusinessStore"
+    },
+    "designerId": "7134e23e-ae0f-42f1-9a33-03fd41b981e9",
+    "cn": [
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "sortProperty": "userName"
+            },
+            "designerId": "252c734a-ce22-4a4a-9553-44ba29cf05df",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "if (item && item.data.userName) {\r",
+                            "    return item.data.userName;\r",
+                            "}\r",
+                            "else {\r",
+                            "    return '';\r",
+                            "}"
+                        ]
+                    },
+                    "designerId": "fdc7dc96-0114-4eaa-b9c4-0608fa9bffe1"
+                }
+            ]
+        }
+    ]
+}

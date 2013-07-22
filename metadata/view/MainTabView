@@ -1,0 +1,251 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeItem": 1,
+        "designer|userClassName": "MainTabView",
+        "designer|userAlias": "main",
+        "designer|initialView": true
+    },
+    "designerId": "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Todo",
+                "iconCls": "star",
+                "store": "BusinessStore",
+                "grouped": true,
+                "onItemDisclosure": true
+            },
+            "designerId": "302347d8-7829-45bb-a616-a7c1c7eee7ed",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "todoContainer"
+                    },
+                    "designerId": "4ccf1fbb-991b-43ce-a18b-306839024209"
+                },
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>{taskName}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "108541e2-f2ac-4f75-a2ce-eb5e8889f07b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Nearby",
+                "iconCls": "maps",
+                "designer|displayName": "Nearby",
+                "layout": "fit"
+            },
+            "designerId": "469ab31a-1bf0-4ccf-a28d-20c8f28f4896",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "nearbyContainer"
+                    },
+                    "designerId": "bdd51e31-8f63-4f63-921c-56cb61644de4",
+                    "cn": [
+                        {
+                            "type": "Ext.Map",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "100%",
+                                "useCurrentLocation": true
+                            },
+                            "designerId": "6a47863a-811d-4b62-af38-6f3d2374515a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Features",
+                "iconCls": "info"
+            },
+            "designerId": "107fe76e-8f62-4d52-9383-c86cf0bfc7a3",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "contentEl": null,
+                        "styleHtmlContent": true,
+                        "tplWriteMode": null,
+                        "designer|displayName": "featuresContainer",
+                        "layout": "fit"
+                    },
+                    "designerId": "f95c9b70-9ff6-496b-9ced-50384d47bfd4",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "<div> \r",
+                                    "    Todo list <br />\r",
+                                    "    Todo by Date <br />\r",
+                                    "    Todo by Location <br />\r",
+                                    "    Nearby Reminders <br />\r",
+                                    "    Cloud Enabled <br />\r",
+                                    "    Share with Friends <br />\r",
+                                    "    Accept/Reject Todo's <br />\r",
+                                    "</div>"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "e7cc0a9c-9b91-4e12-b098-3a97a7d87f60"
+                        },
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": false,
+                                "html": "<div> <h2> Features </h2>     Todo list <br /> Add Todo <br/>     Todo by Date <br />     Todo by Location <br />     Nearby Reminders <br />     Cloud Enabled <br />     Share with Friends <br />     Accept/Reject Todo's <br /> </div>",
+                                "designer|displayName": "featuresLabel"
+                            },
+                            "designerId": "1e2e84c6-613d-48ca-89ac-30d12c6b92eb"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "designerId": "e0eb2fef-c935-4311-9b13-0938fbe87c15"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "top"
+            },
+            "designerId": "40253f57-7d67-4b6d-a25a-1d8196e6561b",
+            "cn": [
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null
+                    },
+                    "designerId": "d2bd318d-eb33-4e15-9239-cc5520945777"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "add",
+                        "text": null
+                    },
+                    "designerId": "6cb54c56-cedd-483c-813d-8f19e8260715",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "Ext.Msg.alert('Task added!','Good-luck!');"
+                                ]
+                            },
+                            "designerId": "3ebb378b-6dff-479c-9d63-db91d309ecaa"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

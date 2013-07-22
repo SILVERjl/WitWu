@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Business"
+    },
+    "designerId": "5eec1da1-39f7-4df1-867c-c2a9cdf45774",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "//var me = this;\r",
+                    "\r",
+                    "\r",
+                    ""
+                ]
+            },
+            "designerId": "e88deb35-c009-41ca-b8a8-96192630f659"
+        }
+    ]
+}

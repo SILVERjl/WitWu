@@ -1,0 +1,79 @@
+{
+    "name": "WitWu",
+    "settings": {
+        "exportPath": "C:/xampp/htdocs",
+        "urlPrefix": ""
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f": {
+            "paths": [
+                "metadata/view/MainTabView",
+                "app/view/override/MainTabView.js",
+                "app/view/MainTabView.js"
+            ],
+            "className": "MainTabView"
+        },
+        "a4b8dcfb-bae7-428e-af9a-0cffcb810270": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "38eaaa4b-0729-4b4f-aafb-638aabfd127c": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "a8c7840c-89c4-489f-a8ec-bf2707bab0be": {
+            "paths": [
+                "metadata/model/Business",
+                "app/model/override/Business.js",
+                "app/model/Business.js"
+            ],
+            "className": "Business"
+        },
+        "7134e23e-ae0f-42f1-9a33-03fd41b981e9": {
+            "paths": [
+                "metadata/store/BusinessStore",
+                "app/store/override/BusinessStore.js",
+                "app/store/BusinessStore.js"
+            ],
+            "className": "BusinessStore"
+        },
+        "5eec1da1-39f7-4df1-867c-c2a9cdf45774": {
+            "paths": [
+                "metadata/controller/Business",
+                "app/controller/override/Business.js",
+                "app/controller/Business.js"
+            ],
+            "className": "Business"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f"
+        ],
+        "store": [
+            "7134e23e-ae0f-42f1-9a33-03fd41b981e9"
+        ],
+        "controller": [
+            "5eec1da1-39f7-4df1-867c-c2a9cdf45774"
+        ],
+        "model": [
+            "a8c7840c-89c4-489f-a8ec-bf2707bab0be"
+        ],
+        "resource": [
+            "a4b8dcfb-bae7-428e-af9a-0cffcb810270",
+            "38eaaa4b-0729-4b4f-aafb-638aabfd127c"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
