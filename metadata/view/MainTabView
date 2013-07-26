@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "activeItem": 1,
         "designer|userClassName": "MainTabView",
         "designer|userAlias": "main",
         "designer|initialView": true
@@ -23,24 +22,13 @@
             "userConfig": {
                 "title": "Todo",
                 "iconCls": "star",
+                "id": "todoList",
                 "store": "BusinessStore",
                 "grouped": true,
                 "onItemDisclosure": true
             },
             "designerId": "302347d8-7829-45bb-a616-a7c1c7eee7ed",
             "cn": [
-                {
-                    "type": "Ext.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|displayName": "todoContainer"
-                    },
-                    "designerId": "4ccf1fbb-991b-43ce-a18b-306839024209"
-                },
                 {
                     "type": "Ext.XTemplate",
                     "reference": {

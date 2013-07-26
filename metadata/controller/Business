@@ -27,6 +27,40 @@
                 ]
             },
             "designerId": "e88deb35-c009-41ca-b8a8-96192630f659"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "todoList",
+                "selector": "#todoList"
+            },
+            "designerId": "a83611d8-c476-4353-aaf1-6004e1bfc55f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "console.log(\"Hello!\");\r",
+                    "var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
+                    "var myRecord = dataview.getStore().getAt(index);\r",
+                    "myStore.remove(record);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#todoList"
+            },
+            "designerId": "36caacf4-9876-432b-a960-b3167bafed5b"
         }
     ]
 }

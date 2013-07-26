@@ -17,6 +17,22 @@ Ext.define('WitWu.controller.Business', {
     extend: 'Ext.app.Controller',
 
     config: {
+        refs: {
+            todoList: '#todoList'
+        },
+
+        control: {
+            "#todoList": {
+                itemtap: 'onListItemTap'
+            }
+        }
+    },
+
+    onListItemTap: function(dataview, index, target, record, e, eOpts) {
+        console.log("Hello!");
+        var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to
+        var myRecord = dataview.getStore().getAt(index);
+        myStore.remove(record);
     },
 
     launch: function() {

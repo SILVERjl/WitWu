@@ -18,23 +18,18 @@ Ext.define('WitWu.view.MainTabView', {
     alias: 'widget.main',
 
     config: {
-        activeItem: 1,
         items: [
             {
                 xtype: 'list',
                 title: 'Todo',
                 iconCls: 'star',
+                id: 'todoList',
                 itemTpl: [
                     '<div>{taskName}</div>'
                 ],
                 store: 'BusinessStore',
                 grouped: true,
-                onItemDisclosure: true,
-                items: [
-                    {
-                        xtype: 'container'
-                    }
-                ]
+                onItemDisclosure: true
             },
             {
                 xtype: 'container',
