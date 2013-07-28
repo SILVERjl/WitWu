@@ -7,67 +7,73 @@
     "codeClass": null,
     "userConfig": {
         "centered": true,
-        "id": "taskDetailsForm",
         "itemId": "taskDetailsForm",
         "designer|userClassName": "taskDetailsForm",
-        "designer|userAlias": "taskdetails",
         "hideOnMaskTap": true,
         "modal": true
     },
-    "designerId": "5f00959b-11f0-47f7-8349-bd3b9aad3c93",
+    "designerId": "748cfe0d-d776-4caa-8c20-e319acfbd0f5",
     "cn": [
         {
-            "type": "Ext.field.Checkbox",
+            "type": "Ext.form.FieldSet",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Field"
+                "title": "MyFieldSet"
             },
-            "designerId": "e6ba35c8-3edd-4a98-b7c1-a32460bdaf3b"
-        },
-        {
-            "type": "Ext.field.Email",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "label": "Field",
-                "placeHolder": "email@example.com"
-            },
-            "designerId": "03d15e2d-3f36-4530-9ffa-8a74075dc169"
-        },
-        {
-            "type": "Ext.Button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "text": "MyButton1"
-            },
-            "designerId": "4120338f-2af2-4f4a-b3cc-ae111667db03"
-        },
-        {
-            "type": "fixedfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "initialize",
-                "implHandler": [
-                    "console.log(\"initializing taskDetailsForm\");\r",
-                    "this.callParent();"
-                ]
-            },
-            "designerId": "f2f8c463-131b-4793-b892-117c20ba8644"
+            "designerId": "b434b6d5-5285-4375-b9f1-db780d7b10d0",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "taskTextField",
+                        "itemId": "taskTextField",
+                        "label": "Field",
+                        "value": [
+                            "\"Hey there!\""
+                        ]
+                    },
+                    "designerId": "65f35dd3-9f83-4599-a36f-cde4f489788f"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "ownerTextField",
+                        "itemId": "ownerTextField",
+                        "label": "Owner",
+                        "value": [
+                            "\"Jedi\""
+                        ]
+                    },
+                    "designerId": "afb7cd94-6e29-4c6e-815e-f4dd2387be6d"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "finishAddButton",
+                        "text": "Finish"
+                    },
+                    "designerId": "757d19e4-b449-4041-ae5c-d0938f6ecb28"
+                }
+            ]
         }
     ]
 }

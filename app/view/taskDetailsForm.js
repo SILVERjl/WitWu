@@ -15,34 +15,39 @@
 
 Ext.define('WitWu.view.taskDetailsForm', {
     extend: 'Ext.Panel',
-    alias: 'widget.taskdetails',
 
     config: {
         centered: true,
-        id: 'taskDetailsForm',
         itemId: 'taskDetailsForm',
         hideOnMaskTap: true,
         modal: true,
         items: [
             {
-                xtype: 'checkboxfield',
-                label: 'Field'
-            },
-            {
-                xtype: 'emailfield',
-                label: 'Field',
-                placeHolder: 'email@example.com'
-            },
-            {
-                xtype: 'button',
-                text: 'MyButton1'
+                xtype: 'fieldset',
+                title: 'MyFieldSet',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        id: 'taskTextField',
+                        itemId: 'taskTextField',
+                        label: 'Field',
+                        value: 'Hey there!'
+                    },
+                    {
+                        xtype: 'textfield',
+                        id: 'ownerTextField',
+                        itemId: 'ownerTextField',
+                        label: 'Owner',
+                        value: 'Jedi'
+                    },
+                    {
+                        xtype: 'button',
+                        itemId: 'finishAddButton',
+                        text: 'Finish'
+                    }
+                ]
             }
         ]
-    },
-
-    initialize: function() {
-        console.log("initializing taskDetailsForm");
-        this.callParent();
     }
 
 });

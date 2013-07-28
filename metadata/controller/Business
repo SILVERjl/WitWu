@@ -67,29 +67,6 @@
                     "\tconsole.log(\"Instantiated taskDetailsForm\");\r",
                     "}\r",
                     "addtask.showBy(button);\r",
-                    "/*var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
-                    "var myRecord = \"Hi there!\";\r",
-                    "myStore.add(myRecord);\r",
-                    "\r",
-                    "if(Ext.ComponentQuery.query('MyPanel'))\r",
-                    "{\r",
-                    "    console.log(\"addTaskForm exists.  Making it active view\");\r",
-                    "    // Ext.Viewport.setActiveItem(Ext.ComponentQuery.query('MyPanel'));   \r",
-                    "    Ext.ComponentQuery.query('main')[0].getLayout().container.setActiveItem('addTaskForm');\r",
-                    "    console.log(\"success\");\r",
-                    "}\r",
-                    "\r",
-                    "  var panel = Ext.create('Ext.Panel', {\r",
-                    "floating: true,\r",
-                    "centered: true,\r",
-                    "width: 200,\r",
-                    "height: 200,\r",
-                    "html: 'Hello world!'\r",
-                    "});\r",
-                    "\r",
-                    "Ext.Viewport.add(panel);\r",
-                    "panel.show();*/\r",
-                    "\r",
                     ""
                 ],
                 "name": "tap",
@@ -106,23 +83,32 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "addTaskForm",
-                "selector": "addTaskForm"
-            },
-            "designerId": "80fbd055-09aa-4d10-8ca3-7f6a333bcff9"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "ref": "taskDetailsForm",
                 "selector": "form[itemId=taskDetailsForm]"
             },
             "designerId": "56fe75c1-9283-49d0-b938-76521732ba17"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFinishButtonTap",
+                "implHandler": [
+                    "var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
+                    "var taskNameIn = Ext.getCmp('taskTextField').getValue();\r",
+                    "var ownerNameIn = Ext.getCmp('ownerTextField').getValue();\r",
+                    "console.log(taskNameIn + ownerNameIn);\r",
+                    "myStore.add({taskName: taskNameIn, ownerName: ownerNameIn} );"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#finishAddButton"
+            },
+            "designerId": "14104a75-5121-4ac7-9777-9fbdeb2dd8db"
         }
     ]
 }

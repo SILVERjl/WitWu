@@ -54,7 +54,7 @@
             ],
             "className": "Business"
         },
-        "5f00959b-11f0-47f7-8349-bd3b9aad3c93": {
+        "748cfe0d-d776-4caa-8c20-e319acfbd0f5": {
             "paths": [
                 "metadata/view/taskDetailsForm",
                 "app/view/override/taskDetailsForm.js",
@@ -66,7 +66,7 @@
     "viewOrderMap": {
         "view": [
             "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f",
-            "5f00959b-11f0-47f7-8349-bd3b9aad3c93"
+            "748cfe0d-d776-4caa-8c20-e319acfbd0f5"
         ],
         "store": [
             "7134e23e-ae0f-42f1-9a33-03fd41b981e9"

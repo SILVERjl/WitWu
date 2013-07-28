@@ -23,7 +23,6 @@ Ext.define('WitWu.controller.Business', {
 
         refs: {
             todoList: '#todoList',
-            addTaskForm: 'addTaskForm',
             taskDetailsForm: 'form[itemId=taskDetailsForm]'
         },
 
@@ -33,6 +32,9 @@ Ext.define('WitWu.controller.Business', {
             },
             "button#addButton": {
                 tap: 'onAddButtonTap'
+            },
+            "button#finishAddButton": {
+                tap: 'onFinishButtonTap'
             }
         }
     },
@@ -55,30 +57,15 @@ Ext.define('WitWu.controller.Business', {
             console.log("Instantiated taskDetailsForm");
         }
         addtask.showBy(button);
-        /*var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to
-        var myRecord = "Hi there!";
-        myStore.add(myRecord);
 
-        if(Ext.ComponentQuery.query('MyPanel'))
-        {
-        console.log("addTaskForm exists.  Making it active view");
-        // Ext.Viewport.setActiveItem(Ext.ComponentQuery.query('MyPanel'));   
-        Ext.ComponentQuery.query('main')[0].getLayout().container.setActiveItem('addTaskForm');
-        console.log("success");
-    }
+    },
 
-    var panel = Ext.create('Ext.Panel', {
-        floating: true,
-        centered: true,
-        width: 200,
-        height: 200,
-        html: 'Hello world!'
-    });
-
-    Ext.Viewport.add(panel);
-    panel.show();*/
-
-
+    onFinishButtonTap: function(button, e, eOpts) {
+        var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to
+        var taskNameIn = Ext.getCmp('taskTextField').getValue();
+        var ownerNameIn = Ext.getCmp('ownerTextField').getValue();
+        console.log(taskNameIn + ownerNameIn);
+        myStore.add({taskName: taskNameIn, ownerName: ownerNameIn} );
     }
 
 });
