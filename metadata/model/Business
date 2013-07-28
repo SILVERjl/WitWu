@@ -31,33 +31,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "ownerName"
+                "name": "userName"
             },
             "designerId": "627007bb-ca1e-4b8a-8c77-e32bc0bb8e27"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "latitude"
-            },
-            "designerId": "d4a609f4-8735-4fde-9cbe-e19ea440b0d2"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "longitude"
-            },
-            "designerId": "4d94a9d9-9f93-47e4-9d5b-1e6b0ff73278"
         },
         {
             "type": "Ext.data.Field",
@@ -70,6 +46,54 @@
                 "name": "taskName"
             },
             "designerId": "883adfdd-c7de-44b6-91bb-53b9f8e67be5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address"
+            },
+            "designerId": "4d94a9d9-9f93-47e4-9d5b-1e6b0ff73278"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "priority"
+            },
+            "designerId": "ce9bc24c-9d4a-4a8f-a560-e6bb8189749b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "dueDate"
+            },
+            "designerId": "6105e034-056b-4d98-b8e1-96f619476a7c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sharedBy"
+            },
+            "designerId": "b0754e02-0daa-4d0b-9be4-b20b3d3b2fc9"
         }
     ]
 }

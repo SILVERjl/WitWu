@@ -23,16 +23,22 @@ Ext.define('WitWu.model.Business', {
                 name: 'id'
             },
             {
-                name: 'ownerName'
-            },
-            {
-                name: 'latitude'
-            },
-            {
-                name: 'longitude'
+                name: 'userName'
             },
             {
                 name: 'taskName'
+            },
+            {
+                name: 'address'
+            },
+            {
+                name: 'priority'
+            },
+            {
+                name: 'dueDate'
+            },
+            {
+                name: 'sharedBy'
             }
         ]
     }

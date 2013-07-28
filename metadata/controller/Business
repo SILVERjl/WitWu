@@ -100,9 +100,9 @@
                 "implHandler": [
                     "var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
                     "var taskNameIn = Ext.getCmp('taskTextField').getValue();\r",
-                    "var ownerNameIn = Ext.getCmp('ownerTextField').getValue();\r",
-                    "console.log(taskNameIn + ownerNameIn);\r",
-                    "myStore.add({taskName: taskNameIn, ownerName: ownerNameIn} );"
+                    "var userNameIn = Ext.getCmp('ownerTextField').getValue();\r",
+                    "console.log(taskNameIn + userNameIn);\r",
+                    "myStore.add({taskName: taskNameIn, userName: userNameIn} );"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",

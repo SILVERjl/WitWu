@@ -63,9 +63,9 @@ Ext.define('WitWu.controller.Business', {
     onFinishButtonTap: function(button, e, eOpts) {
         var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to
         var taskNameIn = Ext.getCmp('taskTextField').getValue();
-        var ownerNameIn = Ext.getCmp('ownerTextField').getValue();
-        console.log(taskNameIn + ownerNameIn);
-        myStore.add({taskName: taskNameIn, ownerName: ownerNameIn} );
+        var userNameIn = Ext.getCmp('ownerTextField').getValue();
+        console.log(taskNameIn + userNameIn);
+        myStore.add({taskName: taskNameIn, userName: userNameIn} );
     }
 
 });

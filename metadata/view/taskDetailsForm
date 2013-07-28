@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "MyFieldSet"
+                "title": "Adding Task..."
             },
             "designerId": "b434b6d5-5285-4375-b9f1-db780d7b10d0",
             "cn": [
@@ -36,7 +36,7 @@
                     "userConfig": {
                         "id": "taskTextField",
                         "itemId": "taskTextField",
-                        "label": "Field",
+                        "label": "Todo",
                         "value": [
                             "\"Hey there!\""
                         ]

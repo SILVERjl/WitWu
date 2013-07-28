@@ -24,55 +24,41 @@ Ext.define('WitWu.store.BusinessStore', {
         data: [
             {
                 id: 200,
-                ownerName: 'Len',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Len',
                 taskName: 'Run 5 miles'
             },
             {
                 id: 201,
-                ownerName: 'Len',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Len',
                 taskName: 'Present marketing plan'
             },
             {
                 id: 202,
-                ownerName: 'Force',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Force',
                 taskName: 'Research potential advertisement platforms'
             },
             {
                 id: 203,
-                ownerName: 'Force',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Force',
                 taskName: 'Get Groceries'
             },
             {
                 id: 204,
-                ownerName: 'Jedi',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Jedi',
                 taskName: 'Demo App'
             },
             {
                 id: 205,
-                ownerName: 'Jedi',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Jedi',
                 taskName: 'Growth Plan'
             },
             {
                 id: 206,
-                ownerName: 'Jedi',
-                latitude: 100,
-                longitude: 100,
+                userName: 'Jedi',
                 taskName: 'Meetign with Chris + Len'
             }
         ],
-        groupField: 'ownerName',
+        groupField: 'userName',
         model: 'WitWu.model.Business',
         storeId: 'BusinessStore',
         grouper: {

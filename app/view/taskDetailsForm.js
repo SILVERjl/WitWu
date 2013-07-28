@@ -24,13 +24,13 @@ Ext.define('WitWu.view.taskDetailsForm', {
         items: [
             {
                 xtype: 'fieldset',
-                title: 'MyFieldSet',
+                title: 'Adding Task...',
                 items: [
                     {
                         xtype: 'textfield',
                         id: 'taskTextField',
                         itemId: 'taskTextField',
-                        label: 'Field',
+                        label: 'Todo',
                         value: 'Hey there!'
                     },
                     {

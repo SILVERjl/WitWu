@@ -8,16 +8,16 @@
     "userConfig": {
         "data": [
             "[\r",
-            "    { id: 200, ownerName: 'Len', latitude:100, longitude:100, taskName: 'Run 5 miles' },   \r",
-            "    { id: 201, ownerName: 'Len', latitude:100, longitude:100, taskName: 'Present marketing plan' },\r",
-            "    { id: 202, ownerName: 'Force', latitude:100, longitude:100, taskName: 'Research potential advertisement platforms' },\r",
-            "    { id: 203, ownerName: 'Force', latitude:100, longitude:100, taskName: 'Get Groceries' },\r",
-            "    { id: 204, ownerName: 'Jedi', latitude:100, longitude:100, taskName: 'Demo App' },\r",
-            "    { id: 205, ownerName: 'Jedi', latitude:100, longitude:100, taskName: 'Growth Plan' },\r",
-            "\t{ id: 206, ownerName: 'Jedi', latitude:100, longitude:100, taskName: 'Meetign with Chris + Len' }   \r",
+            "    { id: 200, userName: 'Len', taskName: 'Run 5 miles' },   \r",
+            "    { id: 201, userName: 'Len', taskName: 'Present marketing plan' },\r",
+            "    { id: 202, userName: 'Force', taskName: 'Research potential advertisement platforms' },\r",
+            "    { id: 203, userName: 'Force', taskName: 'Get Groceries' },\r",
+            "    { id: 204, userName: 'Jedi', taskName: 'Demo App' },\r",
+            "    { id: 205, userName: 'Jedi', taskName: 'Growth Plan' },\r",
+            "\t{ id: 206, userName: 'Jedi', taskName: 'Meetign with Chris + Len' }   \r",
             "]"
         ],
-        "groupField": "ownerName",
+        "groupField": "userName",
         "model": "Business",
         "storeId": "BusinessStore",
         "designer|userClassName": "BusinessStore"
