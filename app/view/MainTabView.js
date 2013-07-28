@@ -20,6 +20,26 @@ Ext.define('WitWu.view.MainTabView', {
     config: {
         items: [
             {
+                xtype: 'toolbar',
+                docked: 'top',
+                layout: {
+                    align: 'center',
+                    pack: 'center',
+                    type: 'hbox'
+                },
+                items: [
+                    {
+                        xtype: 'searchfield'
+                    },
+                    {
+                        xtype: 'button',
+                        id: 'addButton',
+                        itemId: 'addButton',
+                        iconCls: 'add'
+                    }
+                ]
+            },
+            {
                 xtype: 'list',
                 title: 'Todo',
                 iconCls: 'star',
@@ -82,27 +102,6 @@ Ext.define('WitWu.view.MainTabView', {
                         ]
                     }
                 ]
-            },
-            {
-                xtype: 'toolbar',
-                docked: 'top',
-                layout: {
-                    align: 'center',
-                    pack: 'center',
-                    type: 'hbox'
-                },
-                items: [
-                    {
-                        xtype: 'searchfield'
-                    },
-                    {
-                        xtype: 'button',
-                        handler: function(button, event) {
-                            Ext.Msg.alert('Task added!','Good-luck!');
-                        },
-                        iconCls: 'add'
-                    }
-                ]
             }
         ],
         tabBar: {
@@ -112,6 +111,11 @@ Ext.define('WitWu.view.MainTabView', {
                 type: 'hbox'
             }
         }
+    },
+
+    initialize: function() {
+        console.log("initializing MainTabView");
+        this.callParent();
     }
 
 });

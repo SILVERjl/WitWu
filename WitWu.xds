@@ -53,11 +53,20 @@
                 "app/controller/Business.js"
             ],
             "className": "Business"
+        },
+        "5f00959b-11f0-47f7-8349-bd3b9aad3c93": {
+            "paths": [
+                "metadata/view/taskDetailsForm",
+                "app/view/override/taskDetailsForm.js",
+                "app/view/taskDetailsForm.js"
+            ],
+            "className": "taskDetailsForm"
         }
     },
     "viewOrderMap": {
         "view": [
-            "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f"
+            "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f",
+            "5f00959b-11f0-47f7-8349-bd3b9aad3c93"
         ],
         "store": [
             "7134e23e-ae0f-42f1-9a33-03fd41b981e9"

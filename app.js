@@ -26,7 +26,8 @@ Ext.application({
         'BusinessStore'
     ],
     views: [
-        'MainTabView'
+        'MainTabView',
+        'taskDetailsForm'
     ],
     controllers: [
         'Business'
@@ -34,7 +35,8 @@ Ext.application({
     name: 'WitWu',
 
     launch: function() {
-        //Ext.Msg.alert('Application Launch','Success!');
+        console.log("Application Launch.");
+
         Ext.create('WitWu.view.MainTabView', {fullscreen: true});
     }
 

@@ -13,6 +13,49 @@
     "designerId": "a6ac0ba5-f72c-4fed-bc4a-46d33d22c10f",
     "cn": [
         {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "top"
+            },
+            "designerId": "40253f57-7d67-4b6d-a25a-1d8196e6561b",
+            "cn": [
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null
+                    },
+                    "designerId": "d2bd318d-eb33-4e15-9239-cc5520945777"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "addButton",
+                        "itemId": "addButton",
+                        "iconCls": "add",
+                        "text": null
+                    },
+                    "designerId": "6cb54c56-cedd-483c-813d-8f19e8260715"
+                }
+            ]
+        },
+        {
             "type": "Ext.dataview.List",
             "reference": {
                 "name": "items",
@@ -174,66 +217,20 @@
             "designerId": "e0eb2fef-c935-4311-9b13-0938fbe87c15"
         },
         {
-            "type": "Ext.Toolbar",
+            "type": "fixedfunction",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "container|align": "center",
-                "container|pack": "center",
-                "docked": "top"
+                "fn": "initialize",
+                "implHandler": [
+                    "console.log(\"initializing MainTabView\");\r",
+                    "this.callParent();"
+                ]
             },
-            "designerId": "40253f57-7d67-4b6d-a25a-1d8196e6561b",
-            "cn": [
-                {
-                    "type": "Ext.field.Search",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "label": null
-                    },
-                    "designerId": "d2bd318d-eb33-4e15-9239-cc5520945777"
-                },
-                {
-                    "type": "Ext.Button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "iconCls": "add",
-                        "text": null
-                    },
-                    "designerId": "6cb54c56-cedd-483c-813d-8f19e8260715",
-                    "cn": [
-                        {
-                            "type": "fixedfunction",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "handler",
-                                "designer|params": [
-                                    "button",
-                                    "event"
-                                ],
-                                "implHandler": [
-                                    "Ext.Msg.alert('Task added!','Good-luck!');"
-                                ]
-                            },
-                            "designerId": "3ebb378b-6dff-479c-9d63-db91d309ecaa"
-                        }
-                    ]
-                }
-            ]
+            "designerId": "9769003d-0bb6-4d2d-8406-37eba8e8b53e"
         }
     ]
 }

@@ -1,0 +1,73 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "id": "taskDetailsForm",
+        "itemId": "taskDetailsForm",
+        "designer|userClassName": "taskDetailsForm",
+        "designer|userAlias": "taskdetails",
+        "hideOnMaskTap": true,
+        "modal": true
+    },
+    "designerId": "5f00959b-11f0-47f7-8349-bd3b9aad3c93",
+    "cn": [
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Field"
+            },
+            "designerId": "e6ba35c8-3edd-4a98-b7c1-a32460bdaf3b"
+        },
+        {
+            "type": "Ext.field.Email",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Field",
+                "placeHolder": "email@example.com"
+            },
+            "designerId": "03d15e2d-3f36-4530-9ffa-8a74075dc169"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "MyButton1"
+            },
+            "designerId": "4120338f-2af2-4f4a-b3cc-ae111667db03"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "console.log(\"initializing taskDetailsForm\");\r",
+                    "this.callParent();"
+                ]
+            },
+            "designerId": "f2f8c463-131b-4793-b892-117c20ba8644"
+        }
+    ]
+}

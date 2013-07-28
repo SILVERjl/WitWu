@@ -6,28 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "views": [
+            "MainTabView"
+        ],
         "designer|userClassName": "Business"
     },
     "designerId": "5eec1da1-39f7-4df1-867c-c2a9cdf45774",
     "cn": [
-        {
-            "type": "fixedfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "launch",
-                "implHandler": [
-                    "//var me = this;\r",
-                    "\r",
-                    "\r",
-                    ""
-                ]
-            },
-            "designerId": "e88deb35-c009-41ca-b8a8-96192630f659"
-        },
         {
             "type": "controllerref",
             "reference": {
@@ -51,7 +36,7 @@
             "userConfig": {
                 "fn": "onListItemTap",
                 "implHandler": [
-                    "console.log(\"Hello!\");\r",
+                    "\r",
                     "var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
                     "var myRecord = dataview.getStore().getAt(index);\r",
                     "myStore.remove(record);"
@@ -61,6 +46,83 @@
                 "designer|controlQuery": "#todoList"
             },
             "designerId": "36caacf4-9876-432b-a960-b3167bafed5b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddButtonTap",
+                "implHandler": [
+                    "console.log(\"We tapped an add button\");\r",
+                    "\r",
+                    "var addtask = this.getTaskDetailsForm();\r",
+                    "console.log(addtask);\r",
+                    "if (!addtask){\r",
+                    "\tconsole.log('taskDetailsForm is not yet initialized');\r",
+                    "    addtask = Ext.create('WitWu.view.taskDetailsForm', {fullscreen: true});\r",
+                    "\tconsole.log(\"Instantiated taskDetailsForm\");\r",
+                    "}\r",
+                    "addtask.showBy(button);\r",
+                    "/*var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
+                    "var myRecord = \"Hi there!\";\r",
+                    "myStore.add(myRecord);\r",
+                    "\r",
+                    "if(Ext.ComponentQuery.query('MyPanel'))\r",
+                    "{\r",
+                    "    console.log(\"addTaskForm exists.  Making it active view\");\r",
+                    "    // Ext.Viewport.setActiveItem(Ext.ComponentQuery.query('MyPanel'));   \r",
+                    "    Ext.ComponentQuery.query('main')[0].getLayout().container.setActiveItem('addTaskForm');\r",
+                    "    console.log(\"success\");\r",
+                    "}\r",
+                    "\r",
+                    "  var panel = Ext.create('Ext.Panel', {\r",
+                    "floating: true,\r",
+                    "centered: true,\r",
+                    "width: 200,\r",
+                    "height: 200,\r",
+                    "html: 'Hello world!'\r",
+                    "});\r",
+                    "\r",
+                    "Ext.Viewport.add(panel);\r",
+                    "panel.show();*/\r",
+                    "\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#addButton"
+            },
+            "designerId": "8f8c8bc9-5ad7-46ef-b72c-4281cefa62c6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "addTaskForm",
+                "selector": "addTaskForm"
+            },
+            "designerId": "80fbd055-09aa-4d10-8ca3-7f6a333bcff9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "taskDetailsForm",
+                "selector": "form[itemId=taskDetailsForm]"
+            },
+            "designerId": "56fe75c1-9283-49d0-b938-76521732ba17"
         }
     ]
 }
