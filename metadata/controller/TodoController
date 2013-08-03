@@ -6,10 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "TodoModel"
+        ],
+        "stores": [
+            "BusinessStore"
+        ],
         "views": [
             "MainTabView"
         ],
-        "designer|userClassName": "Business"
+        "designer|userClassName": "TodoController"
     },
     "designerId": "5eec1da1-39f7-4df1-867c-c2a9cdf45774",
     "cn": [
@@ -36,7 +42,7 @@
             "userConfig": {
                 "fn": "onListItemTap",
                 "implHandler": [
-                    "\r",
+                    "console.log('TodoController-> itemTap -> onListItemTap\\n');\r",
                     "var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
                     "var myRecord = dataview.getStore().getAt(index);\r",
                     "myStore.remove(record);"
@@ -57,14 +63,14 @@
             "userConfig": {
                 "fn": "onAddButtonTap",
                 "implHandler": [
-                    "console.log(\"We tapped an add button\");\r",
+                    "console.log(\"TodoController-> tap -> onAddButtonTap\\n\");\r",
                     "\r",
                     "var addtask = this.getTaskDetailsForm();\r",
                     "console.log(addtask);\r",
                     "if (!addtask){\r",
-                    "\tconsole.log('taskDetailsForm is not yet initialized');\r",
+                    "    console.log('taskDetailsForm is not yet initialized');\r",
                     "    addtask = Ext.create('WitWu.view.taskDetailsForm', {fullscreen: true});\r",
-                    "\tconsole.log(\"Instantiated taskDetailsForm\");\r",
+                    "    console.log(\"Instantiated taskDetailsForm\");\r",
                     "}\r",
                     "addtask.showBy(button);\r",
                     ""
@@ -98,6 +104,8 @@
             "userConfig": {
                 "fn": "onFinishButtonTap",
                 "implHandler": [
+                    "console.log('TodoController-> tap -> onFinishButtonTap\\n');\r",
+                    "\r",
                     "var myStore = Ext.StoreMgr.get('BusinessStore'); //works - get reference to\r",
                     "var taskNameIn = Ext.getCmp('taskTextField').getValue();\r",
                     "var userNameIn = Ext.getCmp('ownerTextField').getValue();\r",

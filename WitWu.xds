@@ -32,11 +32,11 @@
         },
         "a8c7840c-89c4-489f-a8ec-bf2707bab0be": {
             "paths": [
-                "metadata/model/Business",
-                "app/model/override/Business.js",
-                "app/model/Business.js"
+                "metadata/model/TodoModel",
+                "app/model/override/TodoModel.js",
+                "app/model/TodoModel.js"
             ],
-            "className": "Business"
+            "className": "TodoModel"
         },
         "7134e23e-ae0f-42f1-9a33-03fd41b981e9": {
             "paths": [
@@ -48,11 +48,11 @@
         },
         "5eec1da1-39f7-4df1-867c-c2a9cdf45774": {
             "paths": [
-                "metadata/controller/Business",
-                "app/controller/override/Business.js",
-                "app/controller/Business.js"
+                "metadata/controller/TodoController",
+                "app/controller/override/TodoController.js",
+                "app/controller/TodoController.js"
             ],
-            "className": "Business"
+            "className": "TodoController"
         },
         "748cfe0d-d776-4caa-8c20-e319acfbd0f5": {
             "paths": [

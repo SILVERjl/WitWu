@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "idProperty": "Business_Id",
-        "designer|userClassName": "Business"
+        "idProperty": "TodoModel_Id",
+        "designer|userClassName": "TodoModel"
     },
     "designerId": "a8c7840c-89c4-489f-a8ec-bf2707bab0be",
     "cn": [

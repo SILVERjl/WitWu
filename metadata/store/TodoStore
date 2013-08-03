@@ -19,8 +19,8 @@
         ],
         "groupField": "userName",
         "model": "TodoModel",
-        "storeId": "BusinessStore",
-        "designer|userClassName": "BusinessStore"
+        "storeId": "TodoStore",
+        "designer|userClassName": "TodoStore"
     },
     "designerId": "7134e23e-ae0f-42f1-9a33-03fd41b981e9",
     "cn": [
