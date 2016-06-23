@@ -3,13 +3,59 @@
 </ion-navbar>
 
 <ion-content padding class="home">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <div padding>
+    <ion-segment [(ngModel)]="todo">
+      <ion-segment-button value="todos">
+        Todos
+      </ion-segment-button>
+      <ion-segment-button value="priorities">
+        Priorities
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="todo">
+    <!-- Add a todo -->
+    <ion-item>
+      <ion-label fixed>Add a todo</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <button style="float:right;margin-top:-50px;" secondary>Add</button>
+
+    <!-- List a todo -->
+    <ion-list *ngSwitchWhen="'todos'">
+      <!-- Let's add a repeat here -->
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Todo Item #1</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Todo Item #2</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Todo Item #3</h2>
+      </ion-item>
+      ...
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'priorities'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      ...
+    </ion-list>
+  </div>
+
 </ion-content>
